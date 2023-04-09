@@ -16,6 +16,7 @@ aireplay-ng --deauth 0 -a 64:FB:92:76:22:12 wlan0mon   --- send packets to crack
 
 cd /usr/share/wordlists
 ls   ---  show complete pre build dict passwords list
+wc -l rockyou.txt   --- to check how many passwords in wordlist
 sudo gzip -d rockyou.txt.gz   ---  unzip file
 
 kali㉿kali)-[~]
